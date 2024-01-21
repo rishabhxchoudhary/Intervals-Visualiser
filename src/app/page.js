@@ -63,7 +63,7 @@ const IntervalsVisualizer = () => {
 
 const Home = () => (
   <div className='p-2'>
-    <h1 className='text-2xl font-bold mb-4'>Intervals Visualizer</h1>
+    <h1 className='text-2xl font-bold mb-4'>Intervals Visualizer by rishabhxchoudhary</h1>
     <IntervalsVisualizer />
   </div>
 );

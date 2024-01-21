@@ -45,7 +45,7 @@ const IntervalsVisualizer = () => {
           if (end<start) return;
           console.log(start,end,mx,mn)
           const left = `${((start-mn) / (mx-mn)) * 100}%`;
-          const width = `${((end - start+1) / (mx-mn)) * 100}%`;
+          const width = `${((end - start) / (mx-mn)) * 100}%`;
           const color = `hsl(${i * 30}, 70%, 50%)`;
 
           return (

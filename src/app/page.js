@@ -44,8 +44,8 @@ const IntervalsVisualizer = () => {
           if (end === undefined || isNaN(end) ) end=start;
           if (end<start) return;
           console.log(start,end,mx,mn)
-          const left = `${((start-mn) / (mx-mn+1)) * 100}%`;
-          const width = `${((end - start+1) / (mx-mn+1)) * 100}%`;
+          const left = `${((start-mn) / (mx-mn)) * 100}%`;
+          const width = `${((end - start+1) / (mx-mn)) * 100}%`;
           const color = `hsl(${i * 30}, 70%, 50%)`;
 
           return (

@@ -3,12 +3,12 @@ import React, { useState, useEffect } from 'react';
 
 const IntervalsVisualizer = () => {
   const [intervals, setIntervals] = useState([]);
-  const [mn,setmin]=useState(1000000000000000);
-  const [mx,setmax]=useState(-1000000000000000);
+  const [mn,setmin]=useState(1);
+  const [mx,setmax]=useState(0);
 
   useEffect(() => {
-    let newmn = 1000000000000000;
-    let newmx = -1000000000000000;
+    let newmn = intervals[0].start;
+    let newmx = intervals[0].start;
     for(let i=0;i<intervals.length;i++){
       intervals[i].start = parseInt(intervals[i].start);
       intervals[i].end = parseInt(intervals[i].end);

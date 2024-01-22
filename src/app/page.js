@@ -7,8 +7,14 @@ const IntervalsVisualizer = () => {
   const [mx,setmax]=useState(0);
 
   useEffect(() => {
-    let newmn = intervals[0].start;
-    let newmx = intervals[0].start;
+    // let newmn = intervals[0].start;
+    // let newmx = intervals[0].start;
+    let newmn=1;
+    let newmx=0;
+    if (intervals.length>0){
+      newmn = intervals[0].start;
+      newmx = intervals[0].start;
+    }
     for(let i=0;i<intervals.length;i++){
       intervals[i].start = parseInt(intervals[i].start);
       intervals[i].end = parseInt(intervals[i].end);
